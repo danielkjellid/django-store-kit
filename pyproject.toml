@@ -1,0 +1,118 @@
+[tool.poetry]
+name = "django-store-kit"
+version = "0.1.0"
+description = "Store kit is a package that provides common modules and utilities used for personal e-commerce projects."
+authors = ["Daniel Kjellid <daniel.kjellid@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "store_kit"}]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.1.7"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+ruff = "^0.0.261"
+mypy = "^1.2"
+django-stubs = "^1.16.0"
+click = "^8.1.7"
+rich-click = "^1.6.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.2"
+pytest-pretty = "^1.2.0"
+pytest-env = "^0.8.1"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
+pytest-lazy-fixture = "^0.6.3"
+pytest-xdist = "^3.2.1"
+pytest-django = "^4.5.2"
+
+#########
+# Black #
+#########
+
+[tool.black]
+target-version = ['py39']
+include = '\.pyi?$'
+extend-exclude = 'migrations'
+safe = true
+
+########
+# Mypy #
+########
+
+[tool.mypy]
+python_version = "3.10"
+plugins = ["pydantic.mypy", "mypy_django_plugin.main"]
+follow_imports = "normal"
+ignore_missing_imports = true
+strict = true
+
+disallow_subclassing_any = false
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
+warn_untyped_fields = true
+
+[tool.django-stubs]
+django_settings_module = "store_kit.settings"
+
+########
+# Ruff #
+########
+
+[tool.ruff]
+exclude = [
+    ".git",
+    ".venv",
+    "__pycache__",
+    "conftest.py"
+]
+select = [
+    # Regular flake8 rules
+    "C", "E", "F", "W",
+    # flake8-bugbear rules
+    "B",
+    "I",
+    # Pylint rules
+    "PLC", "PLE", "PLR", "PLW",
+     "RUF",
+]
+ignore = [
+    # C408: Unnecessary <dict/list/tuple> call - rewrite as a literal
+    "C408",
+    # B905: zip() without explicit strict,
+    "B905",
+    # E501: Leave line-length stuff for black to deal with
+    "E501",
+    # Disable magic value comparison. They're perfectly valid in tests and quite a few
+    "PLR2004",
+]
+[tool.ruff.pylint]
+max-args = 10
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "parents"
+
+##########
+# Pytest #
+##########
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["."]
+python_files = "test_*.py"
+# Include captured log messages in system-out in CI report file
+junit_logging = "system-out"
+# --- pytest-django settings
+DJANGO_SETTINGS_MODULE = "store_kit.settings"
+# --- pytest-env settings
+env = ["ENV_PATH=.env.test"]
