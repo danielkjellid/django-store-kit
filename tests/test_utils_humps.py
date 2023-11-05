@@ -1,6 +1,6 @@
 import pytest
 
-from store_kit.humps import camelize, decamelize, is_camelcase, is_snakecase
+from store_kit.utils import camelize, decamelize, is_camelcase, is_snakecase
 
 
 @pytest.mark.parametrize(
