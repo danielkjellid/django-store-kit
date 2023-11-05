@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-store-kit"
-version = "0.1.1"
+version = "0.1.2"
 description = "Store kit is a package that provides common modules and utilities used for personal e-commerce projects."
 authors = ["Daniel Kjellid <daniel.kjellid@gmail.com>"]
 license = "MIT"
