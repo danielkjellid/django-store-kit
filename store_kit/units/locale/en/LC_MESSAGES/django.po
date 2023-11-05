@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-28 15:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: services.py:10
+msgid "Piece"
+msgstr ""
+
+#: services.py:11
+msgid "Pieces"
+msgstr ""
+
+#: services.py:12
+msgid "pcs"
+msgstr ""
+
+#: services.py:19
+msgid "Package"
+msgstr ""
+
+#: services.py:20
+msgid "Packages"
+msgstr ""
+
+#: services.py:21
+msgid "pkg"
+msgstr ""
+
+#: services.py:27
+msgid "Clove"
+msgstr ""
+
+#: services.py:28
+msgid "Cloves"
+msgstr ""
+
+#: services.py:29
+msgid "clove"
+msgstr ""
+
+#: services.py:35
+msgid "Tablet"
+msgstr ""
+
+#: services.py:36
+msgid "Tablets"
+msgstr ""
+
+#: services.py:37
+msgid "tab"
+msgstr ""
+
+#: services.py:43
+msgid "Par"
+msgstr ""
+
+#: services.py:45
+msgid "par"
+msgstr ""
+
+#: services.py:51
+msgid "Portion"
+msgstr ""
+
+#: services.py:53
+msgid "Portions"
+msgstr ""
+
+#: services.py:59
+msgid "Stem"
+msgstr ""
+
+#: services.py:60
+msgid "Stems"
+msgstr ""
+
+#: services.py:61
+msgid "stem"
+msgstr ""
+
+#: services.py:68
+msgid "Gram"
+msgstr ""
+
+#: services.py:70
+msgid "g"
+msgstr ""
+
+#: services.py:76
+msgid "Kilogram"
+msgstr ""
+
+#: services.py:78
+msgid "kg"
+msgstr ""
+
+#: services.py:84
+msgid "Teaspoon"
+msgstr ""
+
+#: services.py:85
+msgid "Teaspoons"
+msgstr ""
+
+#: services.py:86
+msgid "tsp"
+msgstr ""
+
+#: services.py:92
+msgid "Tablespoon"
+msgstr ""
+
+#: services.py:93
+msgid "Tablespoons"
+msgstr ""
+
+#: services.py:94
+msgid "tbsp"
+msgstr ""
+
+#: services.py:100
+msgid "Pinch"
+msgstr ""
+
+#: services.py:101
+msgid "Pinches"
+msgstr ""
+
+#: services.py:102
+msgid "pinch"
+msgstr ""
+
+#: services.py:108
+msgid "Handful"
+msgstr ""
+
+#: services.py:109
+msgid "Handfuls"
+msgstr ""
+
+#: services.py:110
+msgid "handful"
+msgstr ""
+
+#: services.py:116
+msgid "Slice"
+msgstr ""
+
+#: services.py:117
+msgid "Slices"
+msgstr ""
+
+#: services.py:118
+msgid "slice"
+msgstr ""
+
+#: services.py:125
+msgid "Milliliter"
+msgstr ""
+
+#: services.py:127
+msgid "ml"
+msgstr ""
+
+#: services.py:133
+msgid "Liter"
+msgstr ""
+
+#: services.py:135
+msgid "l"
+msgstr ""
+
+#: services.py:141
+msgid "Deciliter"
+msgstr ""
+
+#: services.py:143
+msgid "dl"
+msgstr ""
+
+#: services.py:149
+msgid "Centiliter"
+msgstr ""
+
+#: services.py:151
+msgid "cl"
+msgstr ""
+
+#: services.py:158
+msgid "Millimeter"
+msgstr ""
+
+#: services.py:160
+msgid "mm"
+msgstr ""
+
+#: services.py:166
+msgid "Centimeter"
+msgstr ""
+
+#: services.py:168
+msgid "cm"
+msgstr ""
+
+#: services.py:174
+msgid "Decimeter"
+msgstr ""
+
+#: services.py:176
+msgid "dm"
+msgstr ""
+
+#: services.py:182
+msgid "Meter"
+msgstr ""
+
+#: services.py:184
+msgid "m"
+msgstr ""
+
+#: services.py:190
+msgid "100 meter"
+msgstr ""
+
+#: services.py:192
+msgid "100 m"
+msgstr ""
+
+#: services.py:199
+msgid "Usage"
+msgstr ""
+
+#: services.py:201
+msgid "usage"
+msgstr ""
+
+#: services.py:207
+msgid "Wash"
+msgstr ""
+
+#: services.py:209
+msgid "wash"
+msgstr ""
+
+#: services.py:215
+msgid "Treatment"
+msgstr ""
+
+#: services.py:216
+msgid "Treatments"
+msgstr ""
+
+#: services.py:217
+msgid "treatment"
+msgstr ""
