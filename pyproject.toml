@@ -22,6 +22,7 @@ mypy = "^1.2"
 django-stubs = "^1.16.0"
 click = "^8.1.7"
 rich-click = "^1.6.1"
+rich = "^13.5.3"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.2.2"
