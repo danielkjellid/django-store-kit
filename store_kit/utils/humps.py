@@ -9,7 +9,7 @@ UNDERSCORE_RE = re.compile(r"(?<=[^\-_\s])[\-_\s]+[^\-_\s]")
 
 
 def camelize(
-    str_or_iter: str | list[Any] | dict[str, Any]
+    str_or_iter: str | list[Any] | dict[str, Any],
 ) -> str | list[Any] | dict[str, Any]:
     """
     Convert a string, dict, or list of dicts to camel case.
@@ -31,7 +31,7 @@ def camelize(
 
 
 def decamelize(
-    str_or_iter: str | list[Any] | dict[str, Any]
+    str_or_iter: str | list[Any] | dict[str, Any],
 ) -> str | list[Any] | dict[str, Any]:
     """
     Convert a string, dict, or list of dicts to snake case.
@@ -70,7 +70,7 @@ def is_snakecase(str_or_iter: str | list[Any] | dict[str, Any]) -> bool:
 
 
 def _is_none(
-    _in: str | list[Any] | dict[str, Any] | None
+    _in: str | list[Any] | dict[str, Any] | None,
 ) -> str | list[Any] | dict[str, Any]:
     """
     Determine if the input is None.
