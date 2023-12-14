@@ -44,7 +44,7 @@ jobs:
       postgres-user: store_kit
       postgres-password: store_kit
 
-  python-missing-init:
+  python-missing-init: #
     name: missing __init__.py files
     permissions: write-all
     runs-on: ubuntu-20.04
