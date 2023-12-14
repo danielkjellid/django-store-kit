@@ -8,30 +8,30 @@ env:
 jobs:
   ruff-format:
     name: ruff format
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
     with:
       cmd: make lint-ruff-format
 
   ruff-lint:
     name: ruff lint
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
     with:
       cmd: make lint-ruff
 
   mypy:
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
     with:
       cmd: make lint-mypy
 
   lockfile-consistency:
     name: lockfile consistency
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
     with:
       cmd: poetry lock --check
 
   unused-dependencies:
     name: unused dependencies
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
     with:
       cmd: poetry run deptry .
 
