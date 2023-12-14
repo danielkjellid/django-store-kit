@@ -16,12 +16,13 @@ python = "^3.11"
 django = "^4.1.7"
 
 [tool.poetry.group.dev.dependencies]
-ruff = "^0.0.261"
 mypy = "^1.2"
 django-stubs = "^1.16.0"
 click = "^8.1.7"
 rich-click = "^1.6.1"
 rich = "^13.5.3"
+ruff = "^0.1.8"
+deptry = "^0.12.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.2.2"
@@ -38,7 +39,7 @@ pytest-xdist = "^3.2.1"
 
 [tool.mypy]
 python_version = "3.10"
-plugins = ["pydantic.mypy", "mypy_django_plugin.main"]
+plugins = ["mypy_django_plugin.main"]
 follow_imports = "normal"
 ignore_missing_imports = true
 strict = true
@@ -103,3 +104,16 @@ python_files = "test_*.py"
 junit_logging = "system-out"
 # --- pytest-env settings
 env = ["ENV_PATH=.env.test"]
+
+##########
+# Deptry #
+##########
+
+[tool.deptry]
+extend_exclude = [".*tests.*"]
+
+[tool.deptry.per_rule_ignores]
+# Installed, but not explicitly imported
+DEP002 = [
+    "django"
+]

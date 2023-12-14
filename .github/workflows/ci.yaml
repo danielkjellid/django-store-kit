@@ -10,7 +10,7 @@ jobs:
     name: ruff format
     uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
     with:
-      cmd: poetry run ruff format store_kit --check
+      cmd: poetry run ruff format store_kit -- --check
 
   ruff-lint:
     name: ruff lint
