@@ -10,13 +10,13 @@ jobs:
     name: ruff format
     uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
     with:
-      cmd: poetry run ruff format .
+      cmd: poetry run ruff format store_kit --check
 
   ruff-lint:
     name: ruff lint
     uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
     with:
-      cmd: poetry run ruff .
+      cmd: poetry run ruff store_kit
 
   mypy:
     uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
@@ -33,7 +33,7 @@ jobs:
     name: unused dependencies
     uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
     with:
-      cmd: poetry run deptry .
+      cmd: poetry run deptry store_kit
 
   python-tests:
     name: python tests
