@@ -10,7 +10,7 @@ from store_kit.utils import camelize, decamelize, is_camelcase, is_snakecase
         ("camelCaseString", "camelCaseString"),
     ),
 )
-def test_camelize(input_str, output_str) -> None:
+def test_camelize(input_str: str, output_str: str) -> None:
     assert camelize(input_str) == output_str
 
 
@@ -21,7 +21,7 @@ def test_camelize(input_str, output_str) -> None:
         ("camelCaseString", "camel_case_string"),
     ),
 )
-def test_decamelize(input_str, output_str) -> None:
+def test_decamelize(input_str: str, output_str: str) -> None:
     assert decamelize(input_str) == output_str
 
 
@@ -32,7 +32,7 @@ def test_decamelize(input_str, output_str) -> None:
         ("camelCaseString", False),
     ),
 )
-def test_is_snakecase(input_str, output):
+def test_is_snakecase(input_str: str, output: bool) -> None:
     assert is_snakecase(input_str) == output
 
 
@@ -43,5 +43,5 @@ def test_is_snakecase(input_str, output):
         ("camelCaseString", True),
     ),
 )
-def test_is_camelcase(input_str, output):
+def test_is_camelcase(input_str: str, output: bool) -> None:
     assert is_camelcase(input_str) == output
