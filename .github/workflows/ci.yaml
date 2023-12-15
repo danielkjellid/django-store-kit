@@ -8,36 +8,36 @@ env:
 jobs:
   ruff-format:
     name: ruff format
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
     with:
       cmd: poetry run ruff format store_kit -- --check
 
   ruff-lint:
     name: ruff lint
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
     with:
       cmd: poetry run ruff store_kit
 
   mypy:
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
     with:
       cmd: poetry run mypy .
 
   lockfile-consistency:
     name: lockfile consistency
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
     with:
       cmd: poetry lock --check
 
   unused-dependencies:
     name: unused dependencies
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
     with:
       cmd: poetry run deptry store_kit
 
   python-tests:
     name: python tests
-    uses: danielkjellid/github-actions/.github/workflows/python.yaml@local-actions
+    uses: danielkjellid/github-actions/.github/workflows/python.yaml@main
     with:
       cmd: poetry run pytest
       postgres-db: store_kit
